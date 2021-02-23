@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="style.css"/>
         <script type="application/Javascript" src="dist/js/jquery-2.1.1.min.js"></script>
@@ -8,6 +9,37 @@
        <title>Exercice bootstrap</title> 
     </head>
     <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="nav-header">
+                   <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#monmenu">Menu</button>
+                   <a href="#" class="navbar-brand">Le logo</a> 
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="monmenu">
+                    <form class="navbar-form navbar-left">
+                       <div class="form-group">
+                        <input type="text" placeholder="newsletter"/>
+                       </div> 
+                       <input type="submit" value="recevoir" class="btn btn-success"/> 
+
+                    </form>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">A propos</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Membres<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">ajouter</a></li>
+                            <li><a href="#">modifier</a></li>
+                            <li><a href="#">supprimer</a></li>
+                         </ul>
+                        </li>
+                        <li><a href="#" >Abonnement</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> 
+
+            </div>
+
+        </nav>
         <div class="container">
             <div class="row">
                 <div id="contente" class="col-md-8">
@@ -30,7 +62,7 @@
                  </div>
                 </div>
             </div>
-                <div id="sidebar" class="col-md-4">
+                <div id="sidebar" class="col-md-4 visible-lg">
                 </div>
         </div><!--fin partie paragraphe et sidebar-->
                 <div class="row">
