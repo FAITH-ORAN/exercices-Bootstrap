@@ -5,3 +5,11 @@
 #photos{
     margin-top: 40px;
 }
+@media screen and (max-width: 991px) {
+    img{
+       margin-top: 40px;
+    }
+    button{
+        margin-top:10px;
+    }
+}
