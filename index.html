@@ -79,7 +79,7 @@
                  </div>
                 </div>
             </div>
-                <div id="sidebar" class="col-md-4 visible-lg">
+                <div id="sidebar" class="col-md-4 ">
                   <div class="row">
                     <div id="video" class="col-md-12">
                       <div class="embed-responsive embed-responsive-16by9">
@@ -140,7 +140,7 @@
                     <li><a class="dropdown-item" href="#">annuler</a></li>
                    </ul>
                 </div>
-                <button  class="pull-right" type="button">exporter</button>
+                <button  class="pull-right" type="button" data-target="#exportmodal" data-toggle="modal">exporter</button>
                </div><!--fermeture-->
             <div class="row">
               <div id="photos" class="col-md-12">
@@ -153,25 +153,53 @@
 
               </div>
             </div>
-           <nav aria-label="..." class="navbar-right">
-  <ul class="pagination">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item active" aria-current="page">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
+         <div id="pagination" class="col-md-12">
+           <nav>
+            <ul class="pager">
+             <li class="previous "> <a  href="#">précédent</a>
+             </li>
+             <li class="next"><a class="page-link" href="#">suivant</a></li>
+            </ul>
+           </nav>
+         </div><!--fermeture pagination-->
+          
+         <div id="articles" class="col-md-12">
+           <article>
+             <h3><span data-toggle="tooltip" data-placement="right" title="Date:25/02/2021"> Article 1</span></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloribus ipsum consequuntur rerum veritatis magnam earum beatae quia vitae repellat? Vel quis nulla sed nostrum ducimus neque quidem omnis magnam.</p>
+           </article>
+           <article>
+            <h3><span data-toggle="popover" data-placement="right" data-content="Bonjour c'est Faiza je crée des popover!" title="titre de popover">Article 2</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloribus ipsum consequuntur rerum veritatis magnam earum beatae quia vitae repellat? Vel quis nulla sed nostrum ducimus neque quidem omnis magnam.</p>
+          </article>
 
+         </div>
+
+        </div>
+        <div id="exportmodal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">X</button>
+                <h4 class="modal-title">valider l'exportation</h4>
+              </div><!--fermeture modal header-->
+              <div class="modal-body">
+                Ici votre contenu
+              </div><!--fermeture modal body-->
+              <div class="modal-footer">
+                <button class="btn btn-success">exporter</button>
+              </div><!--fermeture modal footer-->
+            </div>
+          </div>
         </div>
         
 
+      <script type="application/javascript">
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      });
+       </script>
 
     </body>
 </html>
