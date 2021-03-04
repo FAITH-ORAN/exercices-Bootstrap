@@ -102,6 +102,20 @@
                       </div>
 
                     </div><!--fermeture tabulation-->
+                    <div id="collapse"class="col-md-12 bloc">
+                      <div class="panel-group" id="collapsecontent">
+                        <div class="panel-heading">
+                          <h4><a href="#capropos" data-parent="#collapsecontent" data-toggle="collapse">Histoire</a></h4>
+                        </div>
+                        <div id="capropos" class="panle-collapse collapse" >
+                          <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi qui quia!</p>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div><!--la fin de collapse-->
                     </div>
                   </div>
                 </div>
@@ -190,7 +204,43 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloribus ipsum consequuntur rerum veritatis magnam earum beatae quia vitae repellat? Vel quis nulla sed nostrum ducimus neque quidem omnis magnam.</p>
           </article>
 
-         </div>
+         </div><!--fin article-->
+         <div id="carousel" class="col-md-12 bloc">
+           <div id="diaporama" class="carousel">
+             <div class="carousel-inner">
+               <div class=" item active">
+                <img src="images/image_strategie_ender.jpg" alt="image-starwars">
+               </div>
+               <div class=" item ">
+                <img src="images/image_star_wars.jpg" alt="image-starwars">
+               </div>
+               <div class=" item ">
+                <img src="images/image_galactica.jpg" alt="image-starwars">
+               </div>
+              
+             <a class="left carousel-control" href="#diaporama" data-slide="prev" >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#diaporama" data-slide="next" >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+               </a>
+           </div>
+           </div>
+           <div id="miniature" class="row">
+             <div class="col-md-3">
+               <img data-target="#diaporama" data-slide-to="0" src="images/image_strategie_ender.jpg" alt="image-star-wars" class="responsive" width="80%">
+             </div>
+             <div class="col-md-3">
+              <img data-target="#diaporama" data-slide-to="1" src="images/image_star_wars.jpg" alt="image-star-wars" class="responsive"width="80%">
+            </div>
+            <div class="col-md-3">
+              <img data-target="#diaporama" data-slide-to="2" src="images/image_galactica.jpg" alt="image-star-wars" class="responsive" width="80%">
+            </div>
+
+
+
+           </div><!--fin miniature en bas de croussel-->
+         </div><!--fin partie caroussel-->
 
         </div>
         <div id="exportmodal" class="modal fade">
